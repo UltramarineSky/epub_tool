@@ -13,12 +13,13 @@
 
 一个面向 EPUB 批量处理的桌面工具。当前主入口已经切换到 `Tauri 2 + Vue 3 + TypeScript + Python sidecar`，围绕“批量导入、统一执行、结果回看、日志定位”组织桌面工作流。文件解密/加密功能处理的是 EPUB 内文件名与资源引用混淆，不提供 [DRM 内容解密](https://github.com/Satsuoni/DeDRM_tools)。
 
-![Epub Tool 桌面端界面预览](./assets/img/epub_tool_newui.png)
-
+该项目已重构至rust。
 ## 相关仓库
 
 - [Epub Tool Rust 重构桌面端](https://github.com/cnwxi/epub_tool_rust)
 - [Epub Tool Android 端](https://github.com/cnwxi/epub_tool_android)
+
+![Epub Tool 桌面端界面预览](./assets/img/epub_tool_newui.png)
 
 ## 支持的处理能力：
 

@@ -522,7 +522,8 @@ jobs:
 
   update_homebrew_tap:
     name: Update Homebrew Tap
-    if: inputs.release && inputs.release_type == 'latest'
+    # Homebrew publishing moved to cnwxi/epub_tool_rust.
+    if: false
     runs-on: ubuntu-22.04
     needs:
       - prepare

@@ -41,22 +41,11 @@
 
 ## 安装
 
-### macOS（Homebrew）
-
-```bash
-brew tap cnwxi/tap
-brew install --cask epub-tool-newui
-```
-
-更新：
-
-```bash
-brew upgrade --cask epub-tool-newui
-```
+macOS 用户请改用维护中的 [`epub_tool_rust`](https://github.com/cnwxi/epub_tool_rust)，其 Release 会更新 Homebrew Tap。
 
 ### 手动下载
 
-1. 从 [Releases](https://github.com/cnwxi/epub_tool/releases/latest) 下载对应系统的桌面包。
+1. 从 [`epub_tool_rust` Releases](https://github.com/cnwxi/epub_tool_rust/releases/latest) 下载对应系统的桌面包。
 2. 安装并启动应用。
 
 ## 使用方式

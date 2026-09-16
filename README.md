@@ -11,13 +11,14 @@
   <a href="https://github.com/cnwxi/homebrew-tap"><img src="https://img.shields.io/badge/homebrew-cnwxi%2Ftap-FBB040" alt="Homebrew Tap"></a>
 </p>
 
-一个面向 EPUB 批量处理的桌面工具。当前主入口已经切换到 `Tauri 2 + Vue 3 + TypeScript + Python sidecar`，围绕“批量导入、统一执行、结果回看、日志定位”组织桌面工作流。文件解密/加密功能处理的是 EPUB 内文件名与资源引用混淆，不提供 [DRM 内容解密](https://github.com/Satsuoni/DeDRM_tools)。
+> **维护状态**：本仓库原有的 EPUB 处理能力已经迁移到 [`epub_tool_rust`](https://github.com/cnwxi/epub_tool_rust)。迁移的主要目的是获得更好的跨平台开发能力，统一支持 Windows、Linux、macOS 和 Android。原有 Python 后端不适合作为这套跨平台应用的统一运行与分发方案，因此本仓库仅保留作历史参考，不再作为当前开发入口。
+
+这是一个面向 EPUB 批量处理的历史桌面工具，基于 `Tauri 2 + Vue 3 + TypeScript + Python sidecar`。文件解密/加密功能处理的是 EPUB 内文件名与资源引用混淆，不提供 [DRM 内容解密](https://github.com/Satsuoni/DeDRM_tools)。
 
 该项目已重构至rust。
 ## 相关仓库
 
-- [Epub Tool Rust 重构桌面端](https://github.com/cnwxi/epub_tool_rust)
-- [Epub Tool Android 端](https://github.com/cnwxi/epub_tool_android)
+- [Epub Tool 跨平台应用（当前维护仓库）](https://github.com/cnwxi/epub_tool_rust)
 
 ![Epub Tool 桌面端界面预览](./assets/img/epub_tool_newui.png)
 
@@ -34,9 +35,9 @@
 - `replace_cover`：为每本 EPUB 指定 JPG、PNG 或 WebP 封面，并同步更新封面清单和内容页引用
 - `chinese_convert`：使用 OpenCC 双向转换可见简体/繁体中文文本，保留资源路径、ID、CSS 与脚本内容
 
-## 当前桌面版实现
+## 历史桌面版实现
 
-桌面版通过统一任务界面提供文件导入、参数配置、批量执行、进度与日志查看、结果回顾等能力。不同处理功能复用同一套前后端任务协议，并可按各自需求扩展配置和交互。
+本仓库的历史桌面版通过统一任务界面提供文件导入、参数配置、批量执行、进度与日志查看、结果回顾等能力。相关能力现已在 `epub_tool_rust` 中以跨平台方式继续维护。
 
 ## 安装
 
